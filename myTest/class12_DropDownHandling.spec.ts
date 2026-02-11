@@ -9,11 +9,13 @@ test('Dropdown', async()=>{
     await page.goto("");
 
     //Dropdown input from string
-    const emailID ='id=input-email';
-    
+    const emailID ='id=input-email'; 
+    const emailID2 = await page.$('#input-email'); // mostly we can use web elements as emailID
+
     await page.selectOption(emailID, {value: ""});
     await page.selectOption(emailID, {index: 6});
     await page.selectOption(emailID, {label: ""});
+    await emailID2?.selectOption([{value:'aqua'}, {index: 3}]) // For Multiple select option
 
     //Take all values from the Drobdown. (> options is a CSS selector only)
     const allValues : any[] = await page.$$(emailID + "> option");

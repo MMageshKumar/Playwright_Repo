@@ -1,20 +1,26 @@
 import {test, expect, Browser, Page, Locator, BrowserContext} from '@playwright/test'
 import { firefox, chromium, webkit } from '@playwright/test'
 
+test.describe("smoke", ()=> {
+    
 test("At a time open and use many browsers", async()=>{
 
     const browser : Browser = await chromium.launch({headless : false, channel : 'chrome'});
 
     // BrowserContext1
-    const broserContext1: BrowserContext = await browser.newContext();
+    const broserContext1: BrowserContext = await browser.newContext({
+        recordVideo: {
+            dir: "./vidoes/"
+        }
+    });
 
     const page1 : Page = await broserContext1.newPage();
 
     await page1.goto("");
      
-    const emailID1: Locator = await page1.locator('');
-    const password1: Locator = await page1.locator('');
-    const submitButton1: Locator = await page1.locator(' ');
+    const emailID1: Locator = page1.locator('');
+    const password1: Locator = page1.locator('');
+    const submitButton1: Locator = page1.locator(' ');
 
     await emailID1.fill(" ");
     await password1.fill(" ");
@@ -48,4 +54,6 @@ test("At a time open and use many browsers", async()=>{
     await page1.screenshot({path: ''});
 
     await page1.close();
+});
+
 });

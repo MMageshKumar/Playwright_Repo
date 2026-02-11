@@ -23,4 +23,15 @@ test('File Upload', async()=>{
 
     await page.waitForTimeout(10000);
     
+
+    // Listener method
+ page.on('filechooser', (filechooser) => {
+filechooser.setFiles([
+        path.join("path of the file in your system"),
+        path.join("path of the file in your system")
+    ])
+ });
+ await page.locator('id=input-email').click();
+ // then do the click operation - the above listener work with reversely 
+
 });
