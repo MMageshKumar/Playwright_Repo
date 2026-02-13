@@ -13,6 +13,7 @@ test('Timeout', async()=>{
     await page.goto("");
 
    //1. Step level timeout
+   await page.waitForSelector("id=input-email"); // like a webdriver wait in selenium
     await page.locator('id=input-email').click({timeout: 1000});
 
     //2. test level timeout

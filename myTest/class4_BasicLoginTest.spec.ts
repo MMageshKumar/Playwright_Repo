@@ -20,15 +20,8 @@ test("Login test", async()=>{
     const title: String = await page.title();
     expect(title).toEqual("Facebook");
 
-    page.on('dialog', (dialog)=>{
-        dialog.message(); // it will take the aler box headline
-        dialog.defaultValue(); // it will take the aler box searbar value if it's existing
-        dialog.type(); // it will return the type of the alert like simple, accept and cancel alert kind of.
-        dialog.accept("passing the data here itself");
-    })
-    // click action for the alert
-
     await page.screenshot({path: 'C:\Users\mages\Desktop\Playwright_Repo\Resources\sample.png'});
+    await submitButton.screenshot({path: ""}); // Element screenshot
 
     await page.waitForTimeout(10000);
 

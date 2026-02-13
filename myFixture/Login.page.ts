@@ -8,11 +8,11 @@ export default class Loginpage {
     }
 
     public get elementEmailField() {
-    return this.page.$("xpath=//*[@id='email']");
+    return this.page.locator("xpath=//*[@id='email']");
     }
 
     public async enterEmail(name: string){
-       const ele = await this.elementEmailField;
-      await ele?.fill (name);
+       const ele = this.elementEmailField;
+      await ele.fill (name);
     };
 }
