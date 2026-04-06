@@ -1,0 +1,143 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main [ref=e4]:
+    - generic [ref=e5]:
+      - img "Facebook" [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e11]: Log in to Facebook
+        - generic [ref=e14]:
+          - textbox "Email address or phone number" [active] [ref=e16]
+          - textbox "Password" [ref=e20]
+          - button "Log in" [ref=e22] [cursor=pointer]
+          - generic [ref=e23]:
+            - link "Forgotten account?" [ref=e24] [cursor=pointer]:
+              - /url: https://www.facebook.com/recover/initiate/?ars=facebook_login&cancel_lara_pswd=0
+            - text: ·
+            - link "Sign up for Facebook" [ref=e25] [cursor=pointer]:
+              - /url: /r.php?locale=en_GB&display=page
+  - generic [ref=e28]:
+    - list [ref=e29]:
+      - listitem [ref=e30]: English (UK)
+      - listitem [ref=e31]:
+        - link "தமிழ்" [ref=e32] [cursor=pointer]:
+          - /url: https://www.facebook.com/login/
+      - listitem [ref=e33]:
+        - link "తెలుగు" [ref=e34] [cursor=pointer]:
+          - /url: https://ta-in.facebook.com/login/
+      - listitem [ref=e35]:
+        - link "ಕನ್ನಡ" [ref=e36] [cursor=pointer]:
+          - /url: https://te-in.facebook.com/login/
+      - listitem [ref=e37]:
+        - link "اردو" [ref=e38] [cursor=pointer]:
+          - /url: https://kn-in.facebook.com/login/
+      - listitem [ref=e39]:
+        - link "हिन्दी" [ref=e40] [cursor=pointer]:
+          - /url: https://ur-pk.facebook.com/login/
+      - listitem [ref=e41]:
+        - link "മലയാളം" [ref=e42] [cursor=pointer]:
+          - /url: https://hi-in.facebook.com/login/
+      - listitem [ref=e43]:
+        - link "සිංහල" [ref=e44] [cursor=pointer]:
+          - /url: https://ml-in.facebook.com/login/
+      - listitem [ref=e45]:
+        - link "ਪੰਜਾਬੀ" [ref=e46] [cursor=pointer]:
+          - /url: https://si-lk.facebook.com/login/
+      - listitem [ref=e47]:
+        - link "বাংলা" [ref=e48] [cursor=pointer]:
+          - /url: https://pa-in.facebook.com/login/
+      - listitem [ref=e49]:
+        - link "ગુજરાતી" [ref=e50] [cursor=pointer]:
+          - /url: https://bn-in.facebook.com/login/
+      - listitem [ref=e51]:
+        - button "Show more languages" [ref=e52] [cursor=pointer]
+    - contentinfo "Facebook site links" [ref=e55]:
+      - list [ref=e56]:
+        - listitem [ref=e57]:
+          - link "Sign up" [ref=e58] [cursor=pointer]:
+            - /url: /reg/
+        - listitem [ref=e59]:
+          - link "Log in" [ref=e60] [cursor=pointer]:
+            - /url: /login/
+        - listitem [ref=e61]:
+          - link "Messenger" [ref=e62] [cursor=pointer]:
+            - /url: https://messenger.com/
+        - listitem [ref=e63]:
+          - link "Facebook Lite" [ref=e64] [cursor=pointer]:
+            - /url: /lite/
+        - listitem [ref=e65]:
+          - link "Video" [ref=e66] [cursor=pointer]:
+            - /url: https://www.facebook.com/watch/
+        - listitem [ref=e67]:
+          - link "Meta Pay" [ref=e68] [cursor=pointer]:
+            - /url: https://about.meta.com/technologies/meta-pay
+        - listitem [ref=e69]:
+          - link "Meta Store" [ref=e70] [cursor=pointer]:
+            - /url: https://www.meta.com/
+        - listitem [ref=e71]:
+          - link "Meta Quest" [ref=e72] [cursor=pointer]:
+            - /url: https://www.meta.com/quest/
+        - listitem [ref=e73]:
+          - link "Ray-Ban Meta" [ref=e74] [cursor=pointer]:
+            - /url: https://www.meta.com/smart-glasses/
+        - listitem [ref=e75]:
+          - link "Meta AI" [ref=e76] [cursor=pointer]:
+            - /url: https://www.meta.ai/
+        - listitem [ref=e77]:
+          - link "Meta AI more content" [ref=e78] [cursor=pointer]:
+            - /url: https://www.meta.ai/pages/unique-cake-ideas-edible-art-sustainable-baking/?utm_source=foa_web_footer
+        - listitem [ref=e79]:
+          - link "Instagram" [ref=e80] [cursor=pointer]:
+            - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&h=AT3OiYzWACwYgShM61uqVv-TBZwaPEj35XZiG7i8r1tzFkhHg1IMpplP-X8KGT9aOQWIHXW2wO3V-c3s3hAvieLPssjiziFRUVe8N1OUfBqstwTEloVq1t5bK3LYBcwDN7g64HEQFwavvneIfhsz0bRGt0cGhAYJrJDH9w
+        - listitem [ref=e81]:
+          - link "Threads" [ref=e82] [cursor=pointer]:
+            - /url: https://www.threads.com/
+        - listitem [ref=e83]:
+          - link "Voting Information Centre" [ref=e84] [cursor=pointer]:
+            - /url: /votinginformationcenter/?entry_point=c2l0ZQ%3D%3D
+        - listitem [ref=e85]:
+          - link "Privacy Policy" [ref=e86] [cursor=pointer]:
+            - /url: /privacy/policy/?entry_point=facebook_page_footer
+        - listitem [ref=e87]:
+          - link "Privacy Centre" [ref=e88] [cursor=pointer]:
+            - /url: /privacy/center/?entry_point=facebook_page_footer
+        - listitem [ref=e89]:
+          - link "About" [ref=e90] [cursor=pointer]:
+            - /url: https://about.meta.com/
+        - listitem [ref=e91]:
+          - link "Create ad" [ref=e92] [cursor=pointer]:
+            - /url: /ad_campaign/landing.php?placement=pflo&campaign_id=402047449186&nav_source=unknown&extra_1=auto
+        - listitem [ref=e93]:
+          - link "Create Page" [ref=e94] [cursor=pointer]:
+            - /url: /pages/create/?ref_type=site_footer
+        - listitem [ref=e95]:
+          - link "Developers" [ref=e96] [cursor=pointer]:
+            - /url: https://developers.facebook.com/?ref=pf
+        - listitem [ref=e97]:
+          - link "Careers" [ref=e98] [cursor=pointer]:
+            - /url: /careers/?ref=pf
+        - listitem [ref=e99]:
+          - link "Cookies" [ref=e100] [cursor=pointer]:
+            - /url: /policies/cookies/
+        - listitem [ref=e101]:
+          - link "AdChoices" [ref=e102] [cursor=pointer]:
+            - /url: https://www.facebook.com/help/568137493302217
+            - text: AdChoices
+        - listitem [ref=e104]:
+          - link "Terms" [ref=e105] [cursor=pointer]:
+            - /url: /policies?ref=pf
+        - listitem [ref=e106]:
+          - link "Help" [ref=e107] [cursor=pointer]:
+            - /url: /help/?ref=pf
+        - listitem [ref=e108]:
+          - link "Contact uploading and non-users" [ref=e109] [cursor=pointer]:
+            - /url: https://www.facebook.com/help/637205020878504
+        - listitem:
+          - link "Settings" [ref=e110] [cursor=pointer]:
+            - /url: /settings
+        - listitem:
+          - link "Activity log" [ref=e111] [cursor=pointer]:
+            - /url: /allactivity?privacy_source=activity_log_top_menu
+    - generic [ref=e113]: Meta © 2026
+```

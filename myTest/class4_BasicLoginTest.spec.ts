@@ -13,6 +13,8 @@ test("Login test", async()=>{
     const password: Locator = page.locator('xpath=//*[@id="pass"]');
     const submitButton: Locator = page.locator("xpath=//*[@name='login']");
 
+    await page.pause();
+
     await emailID.fill("MageshKumar");
     await password.fill("Password");
     await submitButton.click();
@@ -21,9 +23,10 @@ test("Login test", async()=>{
     expect(title).toEqual("Facebook");
 
     await page.screenshot({path: 'C:\Users\mages\Desktop\Playwright_Repo\Resources\sample.png'});
-    await submitButton.screenshot({path: ""}); // Element screenshot
+    // await submitButton.screenshot({path: "img1.jpg"}); // Element screenshot
 
     await page.waitForTimeout(10000);
 
     await page.close();
+    await browser.close();
 });

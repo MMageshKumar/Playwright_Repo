@@ -32,6 +32,6 @@ filechooser.setFiles([
     ])
  });
  await page.locator('id=input-email').click();
- // then do the click operation - the above listener work with reversely 
+ // when run the click operation - the above listener work as reversely 
 
 });
